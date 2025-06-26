@@ -8,4 +8,4 @@ For identification of footprints [Identification](https://github.com/lyx-lin/Tra
 
 For footprint-informed chromVar [footprint_chromvar](https://github.com/lyx-lin/TraceBIND/blob/main/tutorial/tutorial_chromvar.ipynb). 
 
-The data used could be found [here](https://www.dropbox.com/home/Yuxuan%20Lin/tracebind_github/data)
+The data used could be found [here](https://www.dropbox.com/scl/fo/zhmxfp0gxnmlgeo8jsmbv/AO3I75Lz6eP3Illn-eb0Zgc?rlkey=zkfi6c7c29eb11tbmcz80n8sf&st=2cstifvu&dl=0)
