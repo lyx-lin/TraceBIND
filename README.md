@@ -7,11 +7,11 @@ devtools::install_github("lyx-lin/TraceBIND")
 devtools::install_github("lyx-lin/TraceBIND",dependencies=TRUE)
 ```
 ## Tutorials 
-For training a mitochondrial-finetuned sample-specific Tn5 bias model [Finetuning](https://github.com/lyx-lin/TraceBIND/blob/main/tutorial/tutorial_finetuning.ipynb). 
+For training a mitochondrial-finetuned sample-specific Tn5 bias model [Finetuning](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_finetuning.ipynb). 
 Before finetuning, please download [PRINT Tn5 bias model](https://github.com/lyx-lin/TraceBIND/blob/main/data/shared/Tn5_NN_model.h5).
 
-For identification of footprints [Identification](https://github.com/lyx-lin/TraceBIND/blob/main/tutorial/tutorial_footprint_identification.ipynb). 
+For identification of footprints [Identification](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_footprint_identification.ipynb). 
 
-For footprint-informed chromVar [footprint_chromvar](https://github.com/lyx-lin/TraceBIND/blob/main/tutorial/tutorial_chromvar.ipynb). 
+For footprint-informed chromVar [footprint_chromvar](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_chromvar.ipynb). 
 
 The data used could be found [here](https://www.dropbox.com/scl/fo/zhmxfp0gxnmlgeo8jsmbv/AO3I75Lz6eP3Illn-eb0Zgc?rlkey=zkfi6c7c29eb11tbmcz80n8sf&st=2cstifvu&dl=0).
