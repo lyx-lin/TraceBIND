@@ -5,7 +5,7 @@ The identification of footprints provides a powerful means to detect base-pair r
 ```
 devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
 ```
-The requirements of python for traceBIND finetuning are listed in the requirements.txt (https://github.com/lyx-lin/TraceBIND/blob/main/requirements.txt), which can be done by:
+The requirements of python for traceBIND finetuning are listed in the [requirement](https://github.com/lyx-lin/TraceBIND/blob/main/requirement.txt), which can be done by:
 ```
 pip install -r requirements.txt
 ```
