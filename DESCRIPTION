@@ -1,0 +1,16 @@
+Package: tracebind
+Type: Package
+Title: Prediction of sample-specific Tn5 bias and identification of multiscale footprints. 
+Version: 0.1.0
+Author: Yuxuan Lin
+Maintainer: Yuxuan Lin <lynlin1307@gmail.com>
+Description: Finetune Tn5 bias on mtDNA, predict sample -specific Tn5 bias and identify of multiscale footprints through a statistical model. 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, RcppArmadillo, ACAT, reticulate, MASS, tidyverse, GenomicRanges, patchwork, data.table, tibble, IRanges, gtools, pbmcapply, Matrix, Biostrings, parallel, doSNOW, hdf5r, utils, rhdf5, BSgenome.Hsapiens.UCSC.hg19, BSgenome.Hsapiens.UCSC.hg38, BSgenome.Mmusculus.UCSC.mm10, BSgenome.Rnorvegicus.UCSC.rn7
+Suggest: Doparallel, roxygen2
+SystemRequirements: C++11
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
