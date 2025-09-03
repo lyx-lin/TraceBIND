@@ -6,8 +6,6 @@ import numpy as np
 import tqdm
 import random
 import pickle
-import matplotlib
-import matplotlib.pyplot as plt
 import multiprocessing as mp
 import scipy.stats as ss
 import tensorflow as tf
