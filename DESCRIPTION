@@ -9,7 +9,8 @@ License: MIT
 Encoding: UTF-8
 LazyData: true
 LinkingTo: Rcpp, RcppArmadillo
-Imports: Rcpp, RcppArmadillo, ACAT, reticulate, MASS, tidyverse, GenomicRanges, patchwork, data.table, tibble, IRanges, gtools, pbmcapply, Matrix, Biostrings, parallel, doSNOW, hdf5r, utils, rhdf5
+biocViews: BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5
+Imports: Rcpp, RcppArmadillo, reticulate, MASS, tidyverse, patchwork, data.table, tibble, gtools, pbmcapply, Matrix, parallel, doSNOW, hdf5r, utils
 Suggest: Doparallel, roxygen2
 SystemRequirements: C++11
 RoxygenNote: 7.2.3
