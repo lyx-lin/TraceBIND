@@ -249,10 +249,6 @@ computeCountTensor <- function(frags,
 #' @import IRanges
 #' @import pbmcapply
 #' @import reticulate
-#' @importFrom BSgenome.Hsapiens.UCSC.hg19 BSgenome.Hsapiens.UCSC.hg19
-#' @importFrom BSgenome.Hsapiens.UCSC.hg38 BSgenome.Hsapiens.UCSC.hg38
-#' @importFrom BSgenome.Mmusculus.UCSC.mm10 BSgenome.Mmusculus.UCSC.mm10
-#' @importFrom BSgenome.Rnorvegicus.UCSC.rn7 BSgenome.Rnorvegicus.UCSC.rn7
 #' @importFrom BSgenome getSeq
 #' @importFrom doSNOW registerDoSNOW
 #' @return A bias tensor
@@ -268,15 +264,28 @@ get_bias = function(regionsBed,
   if (is.null(save_path)){
     save_path = getwd()
   }
-
   if(referenceGenome == "hg19"){
-    genome <- BSgenome.Hsapiens.UCSC.hg19
+    if (!require("BSgenome.Hsapiens.UCSC.hg19", quietly = TRUE))
+      install.packages("BSgenome.Hsapiens.UCSC.hg19")
+    BiocManager::install("BSgenome.Hsapiens.UCSC.hg19")
+    genome <- BSgenome.Hsapiens.UCSC.hg19::BSgenome.Hsapiens.UCSC.hg19
   }else if(referenceGenome == "hg38"){
-    genome <- BSgenome.Hsapiens.UCSC.hg38
+    if (!require("BSgenome.Hsapiens.UCSC.hg38", quietly = TRUE))
+      install.packages("BSgenome.Hsapiens.UCSC.hg38")
+    BiocManager::install("BSgenome.Hsapiens.UCSC.hg38")
+    genome <- BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38
   }else if(referenceGenome == "mm10"){
-    genome <- BSgenome.Mmusculus.UCSC.mm10
+    if (!require("BSgenome.Mmusculus.UCSC.mm10", quietly = TRUE))
+      install.packages("BSgenome.Mmusculus.UCSC.mm10")
+    BiocManager::install("BSgenome.Mmusculus.UCSC.mm10")
+    genome <- BSgenome.Mmusculus.UCSC.mm10::BSgenome.Mmusculus.UCSC.mm10
   }else if(referenceGenome == "rn7"){
-    genome <- BSgenome.Rnorvegicus.UCSC.rn7
+    if (!require("BSgenome.Rnorvegicus.UCSC.rn7", quietly = TRUE))
+      install.packages("BSgenome.Rnorvegicus.UCSC.rn7")
+    BiocManager::install("BSgenome.Rnorvegicus.UCSC.rn7")
+    genome <- BSgenome.Rnorvegicus.UCSC.rn7::BSgenome.Rnorvegicus.UCSC.rn7
+  } else {
+    print('please specify your genome file in genome')
   }
 
   regions = GRanges(seqnames = regionsBed$chr,
