@@ -3,8 +3,13 @@
 The identification of footprints provides a powerful means to detect base-pair resolution signals of regulatory elements in chromatin accessibility data. We observe substantial variability in Tn5 transposase cleavage bias across individual samples, highlighting the need for sample-specific correction. TraceBIND is a R package that that corrects sample-specific Tn5 bias through mitochondria-based fine-tuning of PRINT’s deep learning model, and use it to identify TF and nucleosome footprints through a dynamic flanking window statistical scan. TraceBIND also enables sample-specific FDR-controlled p-value thresholds stratified by varying coverage, which is necessary because coverage can vary across orders of magnitude in ATAC-seq data.
 ## Installation
 ```
-devtools::install_github("lyx-lin/TraceBIND",dependencies=TRUE)
+devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
 ```
+The requirements of python for traceBIND finetuning are listed in the requirements.txt (https://github.com/lyx-lin/TraceBIND/blob/main/requirements.txt), which can be done by:
+```
+pip install -r requirements.txt
+```
+
 ## Tutorials 
 For training a mitochondrial-finetuned sample-specific Tn5 bias model [Finetuning](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_finetuning.ipynb). 
 Before finetuning, please download [PRINT Tn5 bias model](https://github.com/lyx-lin/TraceBIND/blob/main/data/shared/Tn5_NN_model.h5).
