@@ -10,7 +10,7 @@ Encoding: UTF-8
 LazyData: true
 LinkingTo: Rcpp, RcppArmadillo
 biocViews: BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5
-Imports: Rcpp, RcppArmadillo, reticulate, MASS, tidyverse, patchwork, data.table, tibble, gtools, pbmcapply, Matrix, parallel, doSNOW, hdf5r, utils, caTools, pracma, BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5, BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5, BiocManager
+Imports: Rcpp, RcppArmadillo, reticulate, MASS, tidyverse, patchwork, data.table, tibble, gtools, pbmcapply, Matrix, parallel, doSNOW, hdf5r, R.utils, caTools, pracma, BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5, BSgenome, IRanges, GenomicRanges, Biostrings, IRanges, rhdf5, BiocManager
 Suggest: Doparallel, roxygen2
 SystemRequirements: C++11
 RoxygenNote: 7.2.3
