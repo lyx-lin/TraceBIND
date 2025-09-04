@@ -3,7 +3,6 @@
 - [Overview](#overview)
 - [Installation](#installation)
 - [Tutorials](#tutorials)
-- [License](#license)
   
 <img src="https://github.com/lyx-lin/TraceBIND/blob/main/figures/tracebind_overview.png">
 
