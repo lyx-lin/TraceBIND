@@ -550,6 +550,7 @@ getChunkInterval <- function(x,
 #' @importFrom parallel clusterEvalQ makeCluster
 #' @importFrom utils txtProgressBar setTxtProgressBar
 #' @return opts and cl for foreach
+#' @export                                           
 #'
 prep_cluster <- function(len,
                          n_cores = 2
