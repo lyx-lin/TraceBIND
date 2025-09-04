@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Tutorials 
 For training a mitochondrial-finetuned sample-specific Tn5 bias model [Finetuning](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_finetuning.ipynb). 
-Before finetuning, please download [PRINT Tn5 bias model](https://github.com/lyx-lin/TraceBIND/blob/main/data/shared/Tn5_NN_model.h5).
+Before finetuning, please download [PRINT Tn5 bias model](https://github.com/HYsxe/PRINT/blob/main/data/shared/Tn5_NN_model.h5).
 
 For identification of footprints [Identification](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_footprint_identification.ipynb). 
 
