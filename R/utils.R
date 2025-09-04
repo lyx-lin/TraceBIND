@@ -249,7 +249,7 @@ computeCountTensor <- function(frags,
 #' @import IRanges
 #' @import pbmcapply
 #' @import reticulate
-#' @importFrom BSgenome getSeq
+#' @importFrom Biostrings getSeq
 #' @importFrom doSNOW registerDoSNOW
 #' @return A bias tensor
 #' @export
