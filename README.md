@@ -10,17 +10,20 @@
 ## Overview
 The identification of footprints provides a powerful means to detect base-pair resolution signals of regulatory elements in chromatin accessibility data. We observe substantial variability in Tn5 transposase cleavage bias across individual samples, highlighting the need for sample-specific correction. TraceBIND is a R package that that corrects sample-specific Tn5 bias through mitochondria-based fine-tuning of PRINT’s deep learning model, and use it to identify TF and nucleosome footprints through a dynamic flanking window statistical scan. TraceBIND also enables sample-specific FDR-controlled p-value thresholds stratified by varying coverage, which is necessary because coverage can vary across orders of magnitude in ATAC-seq data.
 
-## Pre requirements
-Please install the following github packages first. 
-```
-devtools::install_github("yaowuliu/ACAT")
-```
 ## Installation
+### Pre requirements
+Before installing this package, make sure you have the following dependencies installed:
+```bash
+devtools::install_github("yaowuliu/ACAT")
+
+```bash
+Then install this package:
 ```
 devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
 ```
+
 Our Python package has been tested on python=3.11, 3.12. The requirements of python for traceBIND finetuning are listed in the [requirements](https://github.com/lyx-lin/TraceBIND/blob/main/requirements.txt), which can be done by:
-```
+```bash
 pip install -r requirements.txt
 ```
 
