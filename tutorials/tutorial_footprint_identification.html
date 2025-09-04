@@ -7485,6 +7485,7 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">tracebind</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">Biostrings</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">patchwork</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">IRanges</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">pbmcapply</span><span class="p">)</span>
@@ -7492,11 +7493,11 @@ a.anchor-link {
 <span class="nf">library</span><span class="p">(</span><span class="n">gtools</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">foreach</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">doParallel</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">doSNOW</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">GenomicRanges</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">reticulate</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">BSgenome.Hsapiens.UCSC.hg38</span><span class="p">)</span>
-<span class="nf">use_condaenv</span><span class="p">(</span><span class="s">"base"</span><span class="p">)</span>
+<span class="nf">use_condaenv</span><span class="p">(</span><span class="s">"tracetest"</span><span class="p">,</span><span class="w"> </span><span class="n">required</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7583,6 +7584,8 @@ The following objects are masked from ‘package:base’:
     expand.grid, I, unname
 
 
+Loading required package: IRanges
+
 
 Attaching package: ‘IRanges’
 
@@ -7600,6 +7603,28 @@ The following objects are masked from ‘package:dplyr’:
 The following object is masked from ‘package:purrr’:
 
     reduce
+
+
+Loading required package: XVector
+
+
+Attaching package: ‘XVector’
+
+
+The following object is masked from ‘package:purrr’:
+
+    compact
+
+
+Loading required package: GenomeInfoDb
+
+
+Attaching package: ‘Biostrings’
+
+
+The following object is masked from ‘package:base’:
+
+    strsplit
 
 
 Loading required package: parallel
@@ -7629,7 +7654,19 @@ The following objects are masked from ‘package:purrr’:
 
 Loading required package: iterators
 
-Loading required package: GenomeInfoDb
+Loading required package: snow
+
+
+Attaching package: ‘snow’
+
+
+The following objects are masked from ‘package:parallel’:
+
+    closeNode, clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, recvData, recvOneData,
+    sendData, splitIndices, stopCluster
+
 
 
 Attaching package: ‘data.table’
@@ -7664,52 +7701,6 @@ The following objects are masked from ‘package:dplyr’:
 The following object is masked from ‘package:purrr’:
 
     transpose
-
-
-Loading required package: BSgenome
-
-Loading required package: Biostrings
-
-Loading required package: XVector
-
-
-Attaching package: ‘XVector’
-
-
-The following object is masked from ‘package:purrr’:
-
-    compact
-
-
-
-Attaching package: ‘Biostrings’
-
-
-The following object is masked from ‘package:base’:
-
-    strsplit
-
-
-Loading required package: BiocIO
-
-
-Attaching package: ‘BiocIO’
-
-
-The following object is masked from ‘package:reticulate’:
-
-    import
-
-
-Loading required package: rtracklayer
-
-
-Attaching package: ‘rtracklayer’
-
-
-The following object is masked from ‘package:BiocIO’:
-
-    FileForFormat
 
 
 </pre>
