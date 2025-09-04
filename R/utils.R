@@ -561,7 +561,7 @@ prep_cluster <- function(len,
   opts <- list(progress = progress)
   time_elapsed <- Sys.time()
   cl <- makeCluster(n_cores)
-  clusterEvalQ(cl, .libPaths()[2])
+  clusterEvalQ(cl, .libPaths())
   registerDoSNOW(cl)
   list("opts" = opts, "cl" = cl)
 }
