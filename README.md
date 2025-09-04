@@ -17,15 +17,15 @@ Before installing this package, make sure you have the following dependencies in
 devtools::install_github("yaowuliu/ACAT")
 ```
 
+Our package has been tested on python=3.11, 3.12. The requirements of python packages for traceBIND finetuning are listed in the [requirements](https://github.com/lyx-lin/TraceBIND/blob/main/requirements.txt), which can be done by:
+```bash
+pip install -r requirements.txt
+```
+
 Then install this package:
 ```bash
 # install.packages("devtools")
 devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
-```
-
-Our Python package has been tested on python=3.11, 3.12. The requirements of python packages for traceBIND finetuning are listed in the [requirements](https://github.com/lyx-lin/TraceBIND/blob/main/requirements.txt), which can be done by:
-```bash
-pip install -r requirements.txt
 ```
 
 ## Tutorials 
