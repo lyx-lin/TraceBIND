@@ -30,7 +30,7 @@ devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
 
 ## Tutorials 
 Please refer to the following jupyter notebooks for tutorials:
- * [Finetuning sample-specific Tn5 bias model on mito DNA](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_finetuning.ipynb).  * Before finetuning, please download [PRINT Tn5 bias model](https://github.com/HYsxe/PRINT/blob/main/data/shared/Tn5_NN_model.h5).
+ * [Finetuning sample-specific Tn5 bias model on mito DNA](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_finetuning.ipynb).   Before finetuning, please download [PRINT Tn5 bias model](https://github.com/HYsxe/PRINT/blob/main/data/shared/Tn5_NN_model.h5).
  * [Identification of footprints](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_footprint_identification.ipynb). 
  * [Footprint-informed chromVar analysis](https://github.com/lyx-lin/TraceBIND/blob/main/tutorials/tutorial_chromvar.ipynb). 
 
