@@ -15,10 +15,10 @@ The identification of footprints provides a powerful means to detect base-pair r
 Before installing this package, make sure you have the following dependencies installed:
 ```bash
 devtools::install_github("yaowuliu/ACAT")
-
-```bash
-Then install this package:
 ```
+
+Then install this package:
+```bash
 devtools::install_github("lyx-lin/TraceBIND", dependencies=TRUE)
 ```
 
