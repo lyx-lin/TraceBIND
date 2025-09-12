@@ -549,8 +549,7 @@ getChunkInterval <- function(x,
 #' @importFrom doSNOW registerDoSNOW
 #' @importFrom parallel clusterEvalQ makeCluster
 #' @importFrom utils txtProgressBar setTxtProgressBar
-#' @return opts and cl for foreach
-#' @export                                           
+#' @return opts and cl for foreach                                        
 #'
 prep_cluster <- function(len,
                          n_cores = 2
